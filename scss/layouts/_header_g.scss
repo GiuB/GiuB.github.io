@@ -1,0 +1,67 @@
+body {
+    background-color: #262626;
+    color: #929292;
+}
+
+.header-slider-bg-left {
+    background-image: url('/images/head-slider-bg-left.png');
+    background-position: top left;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 914px;
+    height: 789px;
+}
+
+#sticky_header {
+    background: -moz-linear-gradient(-45deg, rgba(174,104,186,0.85) 0%, rgba(112,34,181,0.85) 78%, rgba(146,45,183,0.85) 100%);
+    background: -webkit-linear-gradient(-45deg, rgba(174,104,186,0.85) 0%,rgba(112,34,181,0.85) 78%,rgba(146,45,183,0.85) 100%);
+    background: linear-gradient(135deg, rgba(174,104,186,0.85) 0%,rgba(112,34,181,0.85) 78%,rgba(146,45,183,0.85) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9ae68ba', endColorstr='#d9922db7',GradientType=1 );
+
+    .site_navigation {
+        .navigation_area {
+            & > .mainmenu_area {
+                .mainmenu {
+                    & > li {
+                        & > a {
+                            color: #dadada;
+
+                            &.active {
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.me-img-outer {
+    background-color: #23979c;
+    border-radius: 50%;
+    padding: 7px;
+    margin: -110px auto 22px auto;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    z-index: 5;
+}
+
+.me-img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    margin-bottom: 22px;
+    border-radius: 50%;
+    height: 136px;
+    position: relative;
+    width: 136px;
+    z-index: 5;
+}
+
+.welcome_area {
+    &::before,
+    &::after {
+        background-color: #262626;
+    }
+}
