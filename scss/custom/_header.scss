@@ -46,6 +46,16 @@ body {
     }
 }
 
+.header_social_share {
+    & > {
+        li {
+            & > a {
+                pointer-events: auto;
+            }
+        }
+    }
+}
+
 .me-img-outer {
     background-color: #23979c;
     border-radius: 50%;

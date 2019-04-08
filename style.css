@@ -2418,6 +2418,9 @@ body {
     #sticky_header .site_navigation .navigation_area > .mainmenu_area .mainmenu > li > a.active {
       color: #fff; }
 
+.header_social_share > li > a {
+  pointer-events: auto; }
+
 .me-img-outer {
   background-color: #23979c;
   border-radius: 50%;
