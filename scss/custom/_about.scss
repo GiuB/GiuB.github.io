@@ -1,0 +1,24 @@
+.tag_list > li {
+    color: #efcbf7;
+    padding: 4px 13px;
+    transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    border: solid 1px #9c62a9;
+    background: rgb(153,32,229);
+    background: -moz-linear-gradient(-45deg, rgba(153,32,229,1) 0%, rgba(93,38,201,1) 100%);
+    background: -webkit-linear-gradient(-45deg, rgba(153,32,229,1) 0%,rgba(93,38,201,1) 100%);
+    background: linear-gradient(135deg, rgba(153,32,229,1) 0%,rgba(93,38,201,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9920e5', endColorstr='#5d26c9',GradientType=1 );
+
+    &:hover {
+        color: #ddd;
+        border: solid 1px #4faaaf;
+        background: rgb(35,151,156);
+        background: -moz-linear-gradient(-45deg, rgba(35,151,156,1) 0%, rgba(24,111,137,1) 100%);
+        background: -webkit-linear-gradient(-45deg, rgba(35,151,156,1) 0%,rgba(24,111,137,1) 100%);
+        background: linear-gradient(135deg, rgba(35,151,156,1) 0%,rgba(24,111,137,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#23979c', endColorstr='#186f89',GradientType=1 );
+    }
+}
