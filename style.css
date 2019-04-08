@@ -2451,6 +2451,9 @@ body {
   color: #c4c4c4; }
   .bg_dark h1, .bg_dark h2, .bg_dark h3, .bg_dark h4, .bg_dark h5, .bg_dark h6 {
     color: #c4c4c4; }
+  .bg_dark strong {
+    color: #4eaf9f;
+    text-shadow: 2px 2px 1px #000; }
 
 .tag_list > li {
   color: #efcbf7;
