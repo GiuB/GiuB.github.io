@@ -2399,7 +2399,7 @@ body {
 
 .header-slider-bg-left {
   background-image: url("/images/head-slider-bg-left.png");
-  background-position: -75px 23px;
+  background-position: -75px top;
   background-size: 914px 600px;
   background-repeat: no-repeat;
   position: absolute;
@@ -2454,6 +2454,15 @@ body {
   .bg_dark strong {
     color: #4eaf9f;
     text-shadow: 2px 2px 1px #000; }
+
+.bg-about {
+  background-position: 0 96%;
+  background-size: 1000px 340px;
+  background-repeat: no-repeat; }
+  @media (min-width: 992px) {
+    .bg-about {
+      background-size: contain;
+      background-position: 0 60%; } }
 
 .tag_list > li {
   color: #efcbf7;
