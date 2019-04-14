@@ -86,6 +86,8 @@ Body:      15px/26px 'Poppins', sans-serif;
 @import "layouts/layout";
 @import "layouts/footer";
 @import "layouts/rtl";
+@import "custom/mixins";
 @import "custom/header";
 @import "custom/layout";
 @import "custom/about";
+@import "custom/skill";

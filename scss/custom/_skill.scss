@@ -1,0 +1,31 @@
+.bg-skill {
+    background: rgb(177,55,254);
+    background: -moz-linear-gradient(-45deg, rgba(177,55,254,1) 0%, rgba(142,67,245,1) 50%, rgba(137,69,244,1) 51%, rgba(129,72,242,1) 100%);
+    background: -webkit-linear-gradient(-45deg, rgba(177,55,254,1) 0%,rgba(142,67,245,1) 50%,rgba(137,69,244,1) 51%,rgba(129,72,242,1) 100%);
+    background: linear-gradient(135deg, rgba(177,55,254,1) 0%,rgba(142,67,245,1) 50%,rgba(137,69,244,1) 51%,rgba(129,72,242,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b137fe', endColorstr='#8148f2',GradientType=1 );
+}
+
+.single_skill {
+    h3 {
+        color: white;
+        font-weight: normal;
+        text-shadow: 0px 0px 3px #262626;
+    }
+
+    .progress_bar {
+        height: 5px;
+        @include border-radius(20px);
+        @include box-shadow(1px, 1px, 1px, #505050);
+    
+        > span {
+            background: #23979c none repeat scroll 0 0;
+            @include border-radius(20px);
+
+            > strong {
+                color: #fff;
+                text-shadow: 0px 0px 3px #262626;
+            }
+        }
+    }
+}

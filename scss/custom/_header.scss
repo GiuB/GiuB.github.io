@@ -58,7 +58,7 @@ body {
 
 .me-img-outer {
     background-color: #23979c;
-    border-radius: 50%;
+    @include border-radius(50%);
     padding: 7px;
     margin: -110px auto 22px auto;
     position: relative;
@@ -68,12 +68,12 @@ body {
 }
 
 .me-img {
+    @include border-radius(50%);
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
     margin-bottom: 22px;
-    border-radius: 50%;
-    height: 136px;
     position: relative;
+    height: 136px;
     width: 136px;
     z-index: 5;
 }

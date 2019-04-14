@@ -2388,6 +2388,15 @@ html[dir="rtl"] .entry_post .entry_footer > .entry_meta .entry_user > img {
   html[dir="rtl"] .portfolio_work_nav > li {
     margin-left: 20px; } }
 
+/* -------------------------------------------------------------
+ Sass CSS3 Mixins! The Cross-Browser CSS3 Sass Library
+ By: Matthieu Aussaguel, http://www.mynameismatthieu.com, @matthieu_tweets
+ List of CSS3 Sass Mixins File to be @imported and @included as you need
+ The purpose of this library is to facilitate the use of CSS3 on different browsers avoiding HARD TO READ and NEVER
+ ENDING css files
+ note: All CSS3 Properties are being supported by Safari 5
+ more info: http://www.findmebyip.com/litmus/#css3-properties
+------------------------------------------------------------- */
 body {
   background-color: #262626;
   color: #929292; }
@@ -2423,6 +2432,11 @@ body {
 
 .me-img-outer {
   background-color: #23979c;
+  -webkit-border-radius: 50%;
+  -khtml-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
   border-radius: 50%;
   padding: 7px;
   margin: -110px auto 22px auto;
@@ -2432,12 +2446,17 @@ body {
   z-index: 5; }
 
 .me-img {
+  -webkit-border-radius: 50%;
+  -khtml-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   margin-bottom: 22px;
-  border-radius: 50%;
-  height: 136px;
   position: relative;
+  height: 136px;
   width: 136px;
   z-index: 5; }
 
@@ -2485,3 +2504,41 @@ body {
     background: -webkit-linear-gradient(-45deg, #23979c 0%, #186f89 100%);
     background: linear-gradient(135deg, #23979c 0%, #186f89 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#23979c', endColorstr='#186f89',GradientType=1 ); }
+
+.bg-skill {
+  background: #b137fe;
+  background: -moz-linear-gradient(-45deg, #b137fe 0%, #8e43f5 50%, #8945f4 51%, #8148f2 100%);
+  background: -webkit-linear-gradient(-45deg, #b137fe 0%, #8e43f5 50%, #8945f4 51%, #8148f2 100%);
+  background: linear-gradient(135deg, #b137fe 0%, #8e43f5 50%, #8945f4 51%, #8148f2 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b137fe', endColorstr='#8148f2',GradientType=1 ); }
+
+.single_skill h3 {
+  color: white;
+  font-weight: normal;
+  text-shadow: 0px 0px 3px #262626; }
+
+.single_skill .progress_bar {
+  height: 5px;
+  -webkit-border-radius: 20px;
+  -khtml-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  -webkit-box-shadow: 1px 1px 1px #505050;
+  -khtml-box-shadow: 1px 1px 1px #505050;
+  -moz-box-shadow: 1px 1px 1px #505050;
+  -ms-box-shadow: 1px 1px 1px #505050;
+  -o-box-shadow: 1px 1px 1px #505050;
+  box-shadow: 1px 1px 1px #505050; }
+  .single_skill .progress_bar > span {
+    background: #23979c none repeat scroll 0 0;
+    -webkit-border-radius: 20px;
+    -khtml-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-radius: 20px; }
+    .single_skill .progress_bar > span > strong {
+      color: #fff;
+      text-shadow: 0px 0px 3px #262626; }
