@@ -162,7 +162,8 @@
         fan_fact: function () {
             $('.counter').counterUp({
                 delay: 10,
-                time: 1000
+                time: 1000,
+                beginAt: 0,
             });
         },
     

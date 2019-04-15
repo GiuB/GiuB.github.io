@@ -1,0 +1,39 @@
+.bg-counter {
+    background-image: url("/images/bg-counter.jpg");
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-attachment: unset;
+    background-size: cover;
+}
+
+.counter-ico {
+    width: 115px;
+    height: 111px;
+    margin: 0 auto 15px auto;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &.ico-1 {
+        background-image: url("/images/counter-ico-1.png");    
+    }
+
+    &.ico-2 {
+        background-image: url("/images/counter-ico-2.png");
+    }
+
+    &.ico-3 {
+        background-image: url("/images/counter-ico-3.png");    
+    }
+
+    &.ico-4 {
+        background-image: url("/images/counter-ico-4.png");    
+    }
+}
+
+.single-fanfact {
+    .percent {
+        &:after {
+            content: "%";
+        }
+    }
+}
