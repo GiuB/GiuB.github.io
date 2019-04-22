@@ -216,7 +216,7 @@
         --------------------------------------------- */
         magnific_popup: function () {
             $('.work_item').magnificPopup({
-                type: 'image',
+                type: 'inline',
                 removalDelay: 300,
                 mainClass: 'mfp-with-zoom',
                 gallery: {

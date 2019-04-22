@@ -20,6 +20,9 @@
 
     <!-- Plugins css -->
     <link rel="stylesheet" href="css/plugins.css">
+
+    <!-- Owl carousel -->
+    <link rel="stylesheet" href="js/OwlCarousel2-2.3.4/dist/assets/owl.theme.green.min.css">
     
     <!-- Theme Style -->
     <link rel="stylesheet" href="style.css">
@@ -175,6 +178,9 @@
                                     <li>Sass</li>
                                     <li>Less</li>
                                     <li>Css3</li>
+                                    <li>npm</li>
+                                    <li>Bower</li>
+                                    <li>Composer</li>
                                     <li>Photoshop</li>
                                     <li>Unity</li>
                                 </ul>
@@ -426,80 +432,234 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#" data-filter=".graphic" class="dots_effect filter">Graphic<span class="dot_effect dot_hover"></span></a>
+                                <a href="#" data-filter=".saas" class="dots_effect filter">Saas Projects<span class="dot_effect dot_hover"></span></a>
                             </li>
                             <li>
-                                <a href="#" data-filter=".brand" class="dots_effect filter">Brand<span class="dot_effect dot_hover"></span></a>
+                                <a href="#" data-filter=".personal" class="dots_effect filter">Personal Projects<span class="dot_effect dot_hover"></span></a>
                             </li>
                             <li>
-                                <a href="#" data-filter=".print" class="dots_effect filter">print<span class="dot_effect dot_hover"></span></a>
-                            </li>
-                            <li>
-                                <a href="#" data-filter=".web" class="dots_effect filter"> web<span class="dot_effect dot_hover"></span></a>
+                                <a href="#" data-filter=".web" class="dots_effect filter">Websites<span class="dot_effect dot_hover"></span></a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div id="masonry" class="row justify-content-center portfolio_items_list">
                     <!--~~ Start Sigle Work ~~-->
-                    <div class="col-lg-4 col-md-6 brand grid print">
-                        <a href="http://via.placeholder.com/370x320" class="work_item">
+                    <div class="col-lg-4 col-md-6 saas grid print">
+                        <a href="#gl-popup" class="work_item">
 							<div class="work_thumb">
-								<img src="http://via.placeholder.com/370x320" alt="project1" class="img-responsive">
+								<img src="/images/work/gl/work-logo.jpg" alt="project1" class="img-responsive">
 							</div>
 							<div class="work_hover_mask">
 								<div class="mask_container text-center">
-								    <h3>web design</h3>
-								    <p>Work description here</p>
+								    <h3>web development (SaaS)</h3>
+								    <p>CRM React/Redux</p>
 								</div>
 								<span class="fa fa-picture-o"></span>
-							</div>
-						</a>
+                            </div>
+                        </a>
+                        <div id="gl-popup" class="giub-popup mfp-hide">
+                            <div class="row">
+                                <div class="popup-img col-sm-5">
+                                    <div class="owl-carousel work-carousel owl-theme">
+                                        <div class="item">
+                                            <img src="/images/work/gl/lead_kanban.jpg" />
+                                        </div>
+                                        <div class="item">
+                                            <img src="/images/work/gl/lead_prod.jpg" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="popup-text col-sm-7">
+                                    <h4>GestionaleLead</h4>
+                                    <p>
+                                        Ho lavorato a questo emozionante progetto assieme ad altri 3 professionisti nel team di ricerca e sviluppo per oltre un anno.<br />
+                                        <strong>GestionaleLead è un CRM></strong> per la gestione delle lead derivanti da tutti i portali connessi a <strong>GestionaleAuto.com</strong>.<br />
+                                        Mi sono occupato principalmente del creazione della struttura di base (<strong>React/Redux</strong>), ho selezionato le giuste librerie e sviluppato buona parte dei componenti aiutando nel coordinamento del team di frontend.
+                                    </p>
+                                    <div class="popup-source">
+                                        <div class="popup-period">04/2018 - 05/2019</div>
+                                        <a href="https://www.gestionalelead.com/" rel="nofollow" target="_blank">GestionaleLead.com</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div><!--~/. end single work ~-->
                     <!--~~ Start Sigle Work ~~-->
-                    <div class="col-lg-4 col-md-6 grid web">
-                        <a href="http://via.placeholder.com/370x320" class="work_item">
-							<div class="work_thumb">
-								<img src="http://via.placeholder.com/370x320" alt="project1" class="img-responsive">
-							</div>
-							<div class="work_hover_mask">
-								<div class="mask_container text-center">
-								    <h3>web design</h3>
-								    <p>Work description here</p>
-								</div>
-								<span class="fa fa-picture-o"></span>
-							</div>
-						</a>
+                    <div class="col-lg-4 col-md-6 saas grid print">
+                        <a href="#wpms-popup" class="work_item">
+                            <div class="work_thumb">
+                                <img src="/images/work/wpms/work-logo.jpg" alt="project1" class="img-responsive">
+                            </div>
+                            <div class="work_hover_mask">
+                                <div class="mask_container text-center">
+                                    <h3>web development (SaaS)</h3>
+                                    <p>WordPress Multisite</p>
+                                </div>
+                                <span class="fa fa-picture-o"></span>
+                            </div>
+                        </a>
+                        <div id="wpms-popup" class="giub-popup mfp-hide">
+                            <div class="row">
+                                <div class="popup-img col-sm-5">
+                                    <div class="owl-carousel work-carousel owl-theme">
+                                        <div class="item">
+                                            <img src="/images/work/wpms/ceccatomotors.jpg" />
+                                        </div>
+                                        <div class="item">
+                                            <img src="/images/work/wpms/autoserenissima.jpg" />
+                                        </div>
+                                        <div class="item">
+                                            <img src="/images/work/wpms/automontreal.jpg" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="popup-text col-sm-7">
+                                    <h4>WordPress Dealer Site</h4>
+                                    <p>
+                                        Ho lavorato per circa 3 anni a questo importante progretto assieme ad altri 2 esperti di Wordpress per creare un network di siti dedicato ai dealer del settore automotive.<br />
+                                        Abbiamo affrontato molti problemi tecnici di ogni genere e utilizzato svariati nuovi linguaggi.<br />
+                                        Questa piattaforma conta circa 1000 siti attivi e 30 servizi configurabili tra cui:
+                                    </p>
+                                    <ul>
+                                        <li>Selezione grafica v1/v2/v3</li>
+                                        <li>Wizard quotazione auto usata</li>
+                                        <li>Servizio noleggio veicoli</li>
+                                        <li>Listino automatico per i veicoli nuovi</li>
+                                        <li>Simulatore finanziario / ricerca per rata</li>
+                                        <li>Tracking automatico sistemi analici e marketing</li>
+                                    </ul>
+                                    <div class="popup-source">
+                                        <div class="popup-period">04/2015 - 01/2018</div>
+                                        <a href="https://www.yourdealersite.it/" rel="nofollow" target="_blank">YourDealerSite.it</a><br />
+                                        <a href="https://demo.dealer.gestionaleauto.com" rel="nofollow" target="_blank">Demo dealer</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div><!--~/. end single work ~-->
                     <!--~~ Start Sigle Work ~~-->
-                    <div class="col-lg-4 col-md-6 grid graphic">
-                        <a href="http://via.placeholder.com/370x320" class="work_item">
-							<div class="work_thumb">
-								<img src="http://via.placeholder.com/370x320" alt="project1" class="img-responsive">
-							</div>
-							<div class="work_hover_mask">
-								<div class="mask_container text-center">
-								    <h3>web design</h3>
-								    <p>Work description here</p>
-								</div>
-								<span class="fa fa-picture-o"></span>
-							</div>
-						</a>
+                    <div class="col-lg-4 col-md-6 saas personal grid print">
+                        <a href="#bookskool-popup" class="work_item">
+                            <div class="work_thumb">
+                                <img src="/images/work/bookskool/work-logo.jpg" alt="project1" class="img-responsive">
+                            </div>
+                            <div class="work_hover_mask">
+                                <div class="mask_container text-center">
+                                    <h3>web development (SaaS)</h3>
+                                    <p>Mercatino libri scolastici</p>
+                                </div>
+                                <span class="fa fa-picture-o"></span>
+                            </div>
+                        </a>
+                        <div id="bookskool-popup" class="giub-popup mfp-hide">
+                            <div class="row">
+                                <div class="popup-img col-sm-5">
+                                    <div class="owl-carousel work-carousel owl-theme">
+                                        <div class="item">
+                                            <div>
+                                                <iframe height="315" src="https://www.youtube.com/embed/PowIhlo4iCo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 100%"></iframe>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <img src="/images/work/bookskool/screen-1.jpg" />
+                                        </div>
+                                        <div class="item">
+                                            <img src="/images/work/bookskool/screen-2.jpg" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="popup-text col-sm-7">
+                                    <h4>BookSkool</h4>
+                                    <p>
+                                        Bookskool è un progetto personale che ho sviluppato singolarmente ed è un semplice mercatino web con decine di scuole attive e permette agli studenti di scambiarsi i libri scolastici usati.<br><br />
+                                        L'obbiettivo di questo progettino era: <em>"sviluppare nel minor tempo possibile un'area di backend e frontend per lo scambio dei libri"</em>.<br />
+                                        Questo progetto ha richiesto appena 2 settimane di sviluppo ed è attivo da circa 5 anni.
+                                    </p>
+                                    <div class="popup-source">
+                                        <div class="popup-period">04/2014 - 05/2014</div>
+                                        <a href="http://www.bookskool.com/" rel="nofollow" target="_blank">BookSkool.com</a><br />
+                                        <a href="http://nome-scuola.bookskool.com" rel="nofollow" target="_blank">Demo Frontend</a><br />
+                                        <a href="http://nome-scuola.bookskool.com/admin/login" rel="nofollow" target="_blank">Demo Admin Backend</a><br />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div><!--~/. end single work ~-->
+                    <div class="col-lg-4 col-md-6 saas personal grid print">
+                        <a href="#wprcs-popup" class="work_item">
+                            <div class="work_thumb">
+                                <img src="/images/work/wprcs/work-logo.jpg" alt="project1" class="img-responsive">
+                            </div>
+                            <div class="work_hover_mask">
+                                <div class="mask_container text-center">
+                                    <h3>Plugin WordPress.org</h3>
+                                    <p>Plugin performance WP</p>
+                                </div>
+                                <span class="fa fa-picture-o"></span>
+                            </div>
+                        </a>
+                        <div id="wprcs-popup" class="giub-popup mfp-hide">
+                            <div class="row">
+                                <div class="popup-img col-sm-5">
+                                    <div class="owl-carousel work-carousel owl-theme">
+                                        <div class="item">
+                                            <img src="/images/work/wprcs/work-logo.jpg" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="popup-text col-sm-7">
+                                    <h4>Wp Remove CSS - JS</h4>
+                                    <p>
+                                        Questo è un plugin Wordpress che ho sviluppato personalmente, è utilizzato da sviluppatori con limitate conoscenze di Wordpress per rimuovere da alcune pagine del sito i file js/css inutili.<br />
+                                        Il risultato del plugin è velocizzare al massimo un sito (meglio se affiancato ad un plugin per la gestione della cache).<br />
+                                        Purtroppo con l'arrivo di plugin concorrenti non l'ho più aggiornato ma i buoni feedback della community mi hanno strappato qualche sorriso ;)
+                                    </p>
+                                    <div class="popup-source">
+                                        <div class="popup-period">11/2013 - 12/2013</div>
+                                        <a href="https://github.com/GiuB/WP-Remove-Css-Js" rel="nofollow" target="_blank">Github</a><br />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <!--~~ Start Sigle Work ~~-->
-                    <div class="col-lg-4 col-md-6 grid brand print">
-                        <a href="http://via.placeholder.com/370x320" class="work_item">
-							<div class="work_thumb">
-								<img src="http://via.placeholder.com/370x320" alt="project1" class="img-responsive">
-							</div>
-							<div class="work_hover_mask">
-								<div class="mask_container text-center">
-								    <h3>web design</h3>
-								    <p>Work description here</p>
-								</div>
-								<span class="fa fa-picture-o"></span>
-							</div>
-						</a>
+                    <div class="col-lg-4 col-md-6 saas personal grid print">
+                        <a href="#clientbit-popup" class="work_item">
+                            <div class="work_thumb">
+                                <img src="/images/work/clientbit/work-logo.jpg" alt="project1" class="img-responsive">
+                            </div>
+                            <div class="work_hover_mask">
+                                <div class="mask_container text-center">
+                                    <h3>ClientBit</h3>
+                                    <p>Assistenza informatica</p>
+                                </div>
+                                <span class="fa fa-picture-o"></span>
+                            </div>
+                        </a>
+                        <div id="clientbit-popup" class="giub-popup mfp-hide">
+                            <div class="row">
+                                <div class="popup-img col-sm-5">
+                                    <div class="owl-carousel work-carousel owl-theme">
+                                        <div class="item">
+                                            <img src="/images/work/clientbit/work-logo.jpg" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="popup-text col-sm-7">
+                                    <h4>Wp Remove CSS - JS</h4>
+                                    <p>
+                                        Questo è un plugin Wordpress che ho sviluppato personalmente, è utilizzato da sviluppatori con limitate conoscenze di Wordpress per rimuovere da alcune pagine del sito i file js/css inutili.<br />
+                                        Il risultato del plugin è velocizzare al massimo un sito (meglio se affiancato ad un plugin per la gestione della cache).<br />
+                                        Purtroppo con l'arrivo di plugin concorrenti non l'ho più aggiornato ma i buoni feedback della community mi hanno strappato qualche sorriso ;)
+                                    </p>
+                                    <div class="popup-source">
+                                        <div class="popup-period">11/2013 - 12/2013</div>
+                                        <a href="https://github.com/GiuB/WP-Remove-Css-Js" rel="nofollow" target="_blank">Github</a><br />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div><!--~/. end single work ~-->
                     <!--~~ Start Sigle Work ~~-->
                     <div class="col-lg-4 col-md-6 grid graphic">
@@ -597,6 +757,27 @@
     <script src="js/jquery.appear.js"></script>
     <!-- Main scripts -->
     <script src="js/main.js"></script>
+    <!-- Giub - OwlCarousel -->
+    <script>
+        jQuery(document).ready(function($) {
+            $('.owl-carousel').owlCarousel({
+                items: 1,
+                dots: true,
+                loop: true,
+                margin: 10,
+                // autoplay: true,
+                // autoplayHoverPause: true,
+                responsiveClass: true,
+
+            });
+        });
+
+        // @todo: remove me
+        /*
+        jQuery.magnificPopup.open({
+            items: {src: '#work-popup'},type: 'inline',
+        }); */
+    </script>
     <script type="text/javascript">
         particlesJS('particles-js',{
             "particles": {
