@@ -1,8 +1,17 @@
 .giub-popup {
-    position: relative;
-    background: #FFF;
-    padding: 20px;
-    width: auto;
-    max-width: 90%;
-    margin: 20px auto;
+  position: relative;
+  background: #FFF;
+  padding: 20px;
+  width: auto;
+  max-width: 90%;
+  margin: 20px auto;
+}
+
+.recent_work_nav {
+  & > li {
+    & > a {
+      color: #eee;
+      font-weight: normal;
+    }
   }
+}

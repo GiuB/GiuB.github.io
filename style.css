@@ -2498,6 +2498,7 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9920e5', endColorstr='#5d26c9',GradientType=1 ); }
   .tag_list > li:hover {
     color: #ddd;
+    cursor: none;
     border: solid 1px #4faaaf;
     background: #23979c;
     background: -moz-linear-gradient(-45deg, #23979c 0%, #186f89 100%);
@@ -2652,26 +2653,43 @@ Main components
   .cd-timeline-img.extra-small {
     width: 12px;
     height: 12px;
+    margin-top: 8px;
     margin-left: -6px; }
   .cd-timeline-img.small {
     width: 16px;
     height: 16px;
+    margin-top: 6px;
     margin-left: -8px; }
   .cd-timeline-img.medium {
     width: 20px;
     height: 20px;
+    margin-top: 4px;
     margin-left: -10px; }
   .cd-timeline-img.large {
     width: 26px;
     height: 26px;
+    margin-top: 2px;
     margin-left: -13px; }
   .cd-timeline-img.u-large {
     width: 30px;
     height: 30px;
+    margin-top: -2px;
     margin-left: -15px; }
 
 .cd-timeline-img {
   background: #673AB7; }
+
+@media (max-width: 1169px) {
+  .cd-timeline-img.extra-small {
+    margin-left: 9px; }
+  .cd-timeline-img.small {
+    margin-left: 7px; }
+  .cd-timeline-img.medium {
+    margin-left: 5px; }
+  .cd-timeline-img.large {
+    margin-left: 2px; }
+  .cd-timeline-img.u-large {
+    margin-left: 0; } }
 
 @media only screen and (min-width: 1170px) {
   .cd-timeline-img {
@@ -2810,3 +2828,60 @@ Main components
   width: auto;
   max-width: 90%;
   margin: 20px auto; }
+
+.recent_work_nav > li > a {
+  color: #eee;
+  font-weight: normal; }
+
+.g-footer-text {
+  padding: 5px 0 2px;
+  color: #999; }
+  .g-footer-text.lt {
+    float: left; }
+  .g-footer-text.rt {
+    float: right; }
+
+.footer-contacts a {
+  padding: 10px 20px;
+  color: #4eaf9f;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.4em;
+  font-family: monospace;
+  border: solid 2px #4eaf9f;
+  display: inline-block; }
+  .footer-contacts a:hover {
+    color: #fff;
+    border: solid 2px #52387b;
+    background: #9920e5;
+    background: -moz-linear-gradient(-45deg, #9920e5 0%, #5d26c9 100%);
+    background: -webkit-linear-gradient(-45deg, #9920e5 0%, #5d26c9 100%);
+    background: linear-gradient(135deg, #9920e5 0%, #5d26c9 100%); }
+
+.footer_logo {
+  margin: 30px 0 0; }
+
+.footer_description {
+  font-size: 17px;
+  line-height: 1.6em;
+  color: #eee; }
+  .footer_description .first-row,
+  .footer_description .txt-row {
+    display: block; }
+  .footer_description .first-row {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.6em; }
+  .footer_description .txt-row {
+    margin-top: 5px; }
+
+.g-mail-contact {
+  font-size: 20px;
+  margin-bottom: 15px; }
+  .g-mail-contact i {
+    font-size: 20px; }
+
+.g-phone-contact {
+  font-size: 20px; }
+  .g-phone-contact i {
+    font-size: 20px; }

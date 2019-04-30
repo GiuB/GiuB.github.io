@@ -97,36 +97,66 @@ Main components
   &.extra-small {
     width: 12px;
     height: 12px;
+    margin-top: 8px;
     margin-left: -6px;
   }
 
   &.small {
     width: 16px;
     height: 16px;
+    margin-top: 6px;
     margin-left: -8px;
   }
 
   &.medium {
     width: 20px;
     height: 20px;
+    margin-top: 4px;
     margin-left: -10px;
   }
 
   &.large {
     width: 26px;
     height: 26px;
+    margin-top: 2px;
     margin-left: -13px;
   }
 
   &.u-large {
     width: 30px;
     height: 30px;
+    margin-top: -2px;
     margin-left: -15px;
   }
 }
 .cd-timeline-img {
   background: #673AB7;
 }
+
+@media (max-width: 1169px) {
+  .cd-timeline-img {
+    &.extra-small {
+      margin-left: 9px;
+    }
+
+    &.small {
+      margin-left: 7px;
+    }
+
+    &.medium {
+      margin-left: 5px;
+    }
+
+    &.large {
+      margin-left: 2px;
+    }
+
+    &.u-large {
+      margin-left: 0;
+    }
+  }
+}
+
 @media only screen and (min-width: 1170px) {
   .cd-timeline-img {
     width: 30px;

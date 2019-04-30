@@ -1,0 +1,76 @@
+.g-footer-text {
+    padding: 5px 0 2px;
+    color: #999;
+
+    &.lt {
+        float: left;
+    }
+
+    &.rt {
+        float: right;
+    }
+}
+
+.footer-contacts {
+    a {
+        padding: 10px 20px;
+        color: #4eaf9f;
+        font-weight: bold;
+        text-align: center;
+        line-height: 1.4em;
+        font-family: monospace;
+        border: solid 2px #4eaf9f;
+        display: inline-block;
+
+        &:hover {
+            color: #fff;
+            border: solid 2px #52387b;
+            background: rgb(153,32,229);
+            background: -moz-linear-gradient(-45deg, rgba(153,32,229,1) 0%, rgba(93,38,201,1) 100%);
+            background: -webkit-linear-gradient(-45deg, rgba(153,32,229,1) 0%,rgba(93,38,201,1) 100%);
+            background: linear-gradient(135deg, rgba(153,32,229,1) 0%,rgba(93,38,201,1) 100%);
+        }
+    }
+}
+
+.footer_logo {
+    margin: 30px 0 0;
+}
+
+.footer_description {
+    font-size: 17px;
+    line-height: 1.6em;
+    color: #eee;
+
+    .first-row,
+    .txt-row {
+        display: block;
+    }
+
+    .first-row {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 1.6em;
+    }
+
+    .txt-row {
+        margin-top: 5px;
+    }
+}
+
+.g-mail-contact {
+    font-size: 20px;
+    margin-bottom: 15px;
+
+    i {
+        font-size: 20px;
+    }
+}
+
+.g-phone-contact {
+    font-size: 20px;
+
+    i {
+        font-size: 20px;
+    }
+}
