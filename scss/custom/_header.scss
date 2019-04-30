@@ -22,10 +22,13 @@ body {
 }
 
 #sticky_header {
-    background: -moz-linear-gradient(-45deg, rgba(174,104,186,0.9) 0%, rgba(112,34,181,0.9) 78%, rgba(146,45,183,0.9) 100%);
-    background: -webkit-linear-gradient(-45deg, rgba(174,104,186,0.9) 0%,rgba(112,34,181,0.9) 78%,rgba(146,45,183,0.9) 100%);
-    background: linear-gradient(135deg, rgba(174,104,186,0.9) 0%,rgba(112,34,181,0.9) 78%,rgba(146,45,183,0.9) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9ae68ba', endColorstr='#d9922db7',GradientType=1 );
+    border-bottom: solid 1px #673ab7;
+
+    background: rgb(177,55,254);
+    background: -moz-linear-gradient(-45deg, rgba(177,55,254,1) 0%, rgba(142,67,245,1) 50%, rgba(137,69,244,1) 51%, rgba(129,72,242,1) 100%);
+    background: -webkit-linear-gradient(-45deg, rgba(177,55,254,1) 0%,rgba(142,67,245,1) 50%,rgba(137,69,244,1) 51%,rgba(129,72,242,1) 100%);
+    background: linear-gradient(135deg, rgba(177,55,254,1) 0%,rgba(142,67,245,1) 50%,rgba(137,69,244,1) 51%,rgba(129,72,242,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b137fe', endColorstr='#8148f2',GradientType=1 );
 
     .site_navigation {
         .navigation_area {
@@ -85,5 +88,41 @@ body {
 
     &::after {
         background-color: #262626;
+    }
+}
+
+@media (max-width: 991px) {
+    .header-slider-bg-left {
+        background-image: none;
+    }
+
+    .site_navigation {
+        background: rgb(177,55,254);
+        background: -moz-linear-gradient(-45deg, rgba(177,55,254,1) 0%, rgba(142,67,245,1) 50%, rgba(137,69,244,1) 51%, rgba(129,72,242,1) 100%);
+        background: -webkit-linear-gradient(-45deg, rgba(177,55,254,1) 0%,rgba(142,67,245,1) 50%,rgba(137,69,244,1) 51%,rgba(129,72,242,1) 100%);
+        background: linear-gradient(135deg, rgba(177,55,254,1) 0%,rgba(142,67,245,1) 50%,rgba(137,69,244,1) 51%,rgba(129,72,242,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b137fe', endColorstr='#8148f2',GradientType=1 );
+        padding: 5px 0 10px 0;
+    }
+
+    .navbar-toggler {
+        border: solid 1px #fff;
+
+        & > span {
+            background-color: #fff;
+
+            &:before,
+            &:after {
+                background-color: #fff;
+            }
+        }
+    }
+
+    .site_navigation .navbar-collapse.mainmenu_area.collapse.show {
+        border-top: solid 1px #fff;
+    }
+
+    .navigation_area > .mainmenu_area .mainmenu > li > a {
+        color: #fff;
     }
 }

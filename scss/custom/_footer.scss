@@ -11,6 +11,10 @@
     }
 }
 
+.footer-widgets-area {
+    min-height: calc(100vh - 73px);
+}
+
 .footer-contacts {
     a {
         padding: 10px 20px;
@@ -58,17 +62,26 @@
     }
 }
 
+.g-telegram-contact {
+    font-size: 16px;
+
+    i {
+        font-size: 16px;
+    }
+}
+
 .g-mail-contact {
-    font-size: 20px;
+    font-size: 16px;
     margin-bottom: 15px;
 
     i {
-        font-size: 20px;
+        font-size: 16px;
     }
 }
 
 .g-phone-contact {
     font-size: 20px;
+    margin-bottom: 15px;
 
     i {
         font-size: 20px;
