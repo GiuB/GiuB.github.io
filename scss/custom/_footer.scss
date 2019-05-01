@@ -1,3 +1,11 @@
+.footer {
+    background: #28a07a;
+    background: -moz-linear-gradient(-45deg, #28a07a 1%, #127d84 100%);
+    background: -webkit-linear-gradient(-45deg, #28a07a 1%,#127d84 100%);
+    background: linear-gradient(135deg, #28a07a 1%,#127d84 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#28a07a', endColorstr='#127d84',GradientType=1 );
+}
+
 .g-footer-text {
     padding: 5px 0 2px;
     color: #999;
@@ -18,17 +26,17 @@
 .footer-contacts {
     a {
         padding: 10px 20px;
-        color: #4eaf9f;
+        color: #fff;
         font-weight: bold;
         text-align: center;
         line-height: 1.4em;
         font-family: monospace;
-        border: solid 2px #4eaf9f;
+        border: solid 2px #fff;
         display: inline-block;
 
         &:hover {
             color: #fff;
-            border: solid 2px #52387b;
+            border: solid 2px #673ab7;
             background: rgb(153,32,229);
             background: -moz-linear-gradient(-45deg, rgba(153,32,229,1) 0%, rgba(93,38,201,1) 100%);
             background: -webkit-linear-gradient(-45deg, rgba(153,32,229,1) 0%,rgba(93,38,201,1) 100%);

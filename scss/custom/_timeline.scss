@@ -15,8 +15,8 @@
   margin: 0 auto;
   padding: 0 10%;
   border-radius: 2px;
-  background-image: url("/images/right-grey-stripes.png");
-  background-position: right bottom;
+  background-image: url("/images/square-char.png");
+  background-position: 95% 96%;
   background-repeat: no-repeat;
 }
 .cd-container::after {
@@ -131,6 +131,18 @@ Main components
 }
 .cd-timeline-img {
   background: #673AB7;
+}
+
+.cd-timeline-content .extra-small::before {
+  top: 24px;  
+}
+
+@media (min-width: 1170px) {
+  .cd-timeline-content {
+    &::before {
+      top: 16px;
+    } 
+  }
 }
 
 @media (max-width: 1169px) {

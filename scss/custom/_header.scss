@@ -22,13 +22,13 @@ body {
 }
 
 #sticky_header {
-    border-bottom: solid 1px #673ab7;
+    border-bottom: solid 3px #844bbe;
+    background-color: #262626;
+    background-color: rgba(38, 38, 38, .95);
 
-    background: rgb(177,55,254);
-    background: -moz-linear-gradient(-45deg, rgba(177,55,254,1) 0%, rgba(142,67,245,1) 50%, rgba(137,69,244,1) 51%, rgba(129,72,242,1) 100%);
-    background: -webkit-linear-gradient(-45deg, rgba(177,55,254,1) 0%,rgba(142,67,245,1) 50%,rgba(137,69,244,1) 51%,rgba(129,72,242,1) 100%);
-    background: linear-gradient(135deg, rgba(177,55,254,1) 0%,rgba(142,67,245,1) 50%,rgba(137,69,244,1) 51%,rgba(129,72,242,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b137fe', endColorstr='#8148f2',GradientType=1 );
+    .dot_effect {
+        background-color: #b161ff;
+    }
 
     .site_navigation {
         .navigation_area {
@@ -97,12 +97,9 @@ body {
     }
 
     .site_navigation {
-        background: rgb(177,55,254);
-        background: -moz-linear-gradient(-45deg, rgba(177,55,254,1) 0%, rgba(142,67,245,1) 50%, rgba(137,69,244,1) 51%, rgba(129,72,242,1) 100%);
-        background: -webkit-linear-gradient(-45deg, rgba(177,55,254,1) 0%,rgba(142,67,245,1) 50%,rgba(137,69,244,1) 51%,rgba(129,72,242,1) 100%);
-        background: linear-gradient(135deg, rgba(177,55,254,1) 0%,rgba(142,67,245,1) 50%,rgba(137,69,244,1) 51%,rgba(129,72,242,1) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b137fe', endColorstr='#8148f2',GradientType=1 );
-        padding: 5px 0 10px 0;
+        box-shadow: 0 0 10px black;
+        background-color: #262626;
+        background-color: rgba(38, 38, 38, .85);
     }
 
     .navbar-toggler {
@@ -118,11 +115,36 @@ body {
         }
     }
 
+    .navbar-toggler-icon {
+        margin-top: -3px;
+    }
+
     .site_navigation .navbar-collapse.mainmenu_area.collapse.show {
-        border-top: solid 1px #fff;
+        border-top: none;
+        margin-top: 0;
     }
 
     .navigation_area > .mainmenu_area .mainmenu > li > a {
         color: #fff;
+        padding-left: 10px !important;
+
+        &:before {
+            content: ' ';
+            background-color: transparent;
+            background-color: #1EBBA3;
+            border-radius: 50px;
+            line-height: 5px;
+            display: inline-block;
+            height: 5px;
+            margin: 8px 0 0 -10px;
+            position: absolute;
+            width: 5px;
+        }
+
+        &:hover {
+            &:before {
+                width: 5px;
+            }
+        }
     }
 }
