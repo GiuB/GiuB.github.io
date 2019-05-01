@@ -15,10 +15,16 @@
   margin: 0 auto;
   padding: 0 10%;
   border-radius: 2px;
-  background-image: url("/images/square-char.png");
-  background-position: 95% 96%;
-  background-repeat: no-repeat;
 }
+
+@media (min-width: 1170px) { 
+  .cd-container {
+    background-image: url("/images/square-char.png");
+    background-position: 95% 96%;
+    background-repeat: no-repeat;
+  }
+}
+
 .cd-container::after {
   content: '';
   display: table;

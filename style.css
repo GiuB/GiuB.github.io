@@ -2485,6 +2485,9 @@ body {
   .site_navigation .navbar-collapse.mainmenu_area.collapse.show {
     border-top: none;
     margin-top: 0; }
+  .navigation_area > .mainmenu_area .mainmenu {
+    padding: 20px 20px 10px;
+    padding-bottom: 0; }
   .navigation_area > .mainmenu_area .mainmenu > li > a {
     color: #fff;
     padding-left: 10px !important; }
@@ -2619,10 +2622,13 @@ body {
   width: 100%;
   margin: 0 auto;
   padding: 0 10%;
-  border-radius: 2px;
-  background-image: url("/images/square-char.png");
-  background-position: 95% 96%;
-  background-repeat: no-repeat; }
+  border-radius: 2px; }
+
+@media (min-width: 1170px) {
+  .cd-container {
+    background-image: url("/images/square-char.png");
+    background-position: 95% 96%;
+    background-repeat: no-repeat; } }
 
 .cd-container::after {
   content: '';
@@ -2876,15 +2882,15 @@ Main components
   color: #eee;
   font-weight: normal; }
 
-.work-bg-left {
-  background-image: url(/images/bg-green-work-bottom-left.png);
-  background-position: left bottom;
-  background-repeat: no-repeat; }
-
-.work-bg-right {
-  background-image: url(/images/bg-color-work-top-right.png);
-  background-position: right top;
-  background-repeat: no-repeat; }
+@media (min-width: 992px) {
+  .work-bg-left {
+    background-image: url(/images/bg-green-work-bottom-left.png);
+    background-position: left bottom;
+    background-repeat: no-repeat; }
+  .work-bg-right {
+    background-image: url(/images/bg-color-work-top-right.png);
+    background-position: right top;
+    background-repeat: no-repeat; } }
 
 .footer {
   background: #28a07a;
