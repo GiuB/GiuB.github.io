@@ -2452,8 +2452,8 @@ body {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   border-radius: 50%;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
+  /* -webkit-filter: grayscale(100%);
+    filter: grayscale(100%); */
   margin-bottom: 22px;
   position: relative;
   height: 136px;
