@@ -9,6 +9,12 @@
     }
 }
 
+.about_content {
+    p {
+        font-size: 16px;
+    }
+}
+
 .tag_list > li {
     border: none;
     font-size: 13px;
@@ -24,8 +30,12 @@
     background: linear-gradient(135deg, rgba(153,32,229,1) 0%,rgba(93,38,201,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9920e5', endColorstr='#5d26c9',GradientType=1 );
 
+    &.relevant {
+        font-weight: bold;
+        border: solid 1px #fff;
+    }
+
     &:hover {
-        border: none;
         color: #f4e3ff;
         cursor: default;
         background-color: rgb(153,32,229);
