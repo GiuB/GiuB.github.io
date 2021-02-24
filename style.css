@@ -2521,6 +2521,16 @@ body {
       background-size: contain;
       background-position: 0 60%; } }
 
+.about_content + .about_content--main {
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  line-height: 1.2em;
+  font-weight: bold;
+  font-size: 42px;
+  margin: 110px 0; }
+  .about_content + .about_content--main strong {
+    color: #e8e8e8; }
+
 .about_content p {
   font-size: 16px; }
 
