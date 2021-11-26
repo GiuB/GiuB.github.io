@@ -68,23 +68,23 @@
     overflow: hidden;
     &:before,
     &:after {
-        background-color: #fff;
-        content: "";
-        height: 105px;
-        position: absolute;
-        width: 56%;
+        width: 55%;
         z-index: 2;
-        bottom: -42px;
+        content: "";
+        height: 405px;
+        bottom: -320px;
+        position: absolute;
+        background-color: #fff;
     }
     &:before {
-        left: -45px;
-        -webkit-transform: rotate(10deg) scaleY(1.25);
-                transform: rotate(10deg) scaleY(1.25);
+        left: -5%;
+        -webkit-transform: rotate(5deg);
+                transform: rotate(5deg);
     }
     &:after {
-        right: -45px;
-        -webkit-transform: rotate(-10deg) scaleY(1.25);
-                transform: rotate(-10deg) scaleY(1.25);
+        right: -5%;
+        -webkit-transform: rotate(-5deg);
+                transform: rotate(-5deg);
     }
 }
 

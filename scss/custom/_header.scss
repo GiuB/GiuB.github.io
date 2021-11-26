@@ -83,11 +83,13 @@ body {
 
 .welcome_area {
     &::before {
-        background-color: #252525;
+        background-color: #262626;
+        // display: none;
     }
 
     &::after {
         background-color: #262626;
+        // display: none;
     }
 }
 

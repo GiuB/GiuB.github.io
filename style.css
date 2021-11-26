@@ -999,21 +999,21 @@ textarea {
   position: relative;
   overflow: hidden; }
   .welcome_area:before, .welcome_area:after {
-    background-color: #fff;
-    content: "";
-    height: 105px;
-    position: absolute;
-    width: 56%;
+    width: 55%;
     z-index: 2;
-    bottom: -42px; }
+    content: "";
+    height: 405px;
+    bottom: -320px;
+    position: absolute;
+    background-color: #fff; }
   .welcome_area:before {
-    left: -45px;
-    -webkit-transform: rotate(10deg) scaleY(1.25);
-    transform: rotate(10deg) scaleY(1.25); }
+    left: -5%;
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg); }
   .welcome_area:after {
-    right: -45px;
-    -webkit-transform: rotate(-10deg) scaleY(1.25);
-    transform: rotate(-10deg) scaleY(1.25); }
+    right: -5%;
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg); }
 
 .home_wrapper_info {
   -webkit-box-align: center;
@@ -2461,7 +2461,7 @@ body {
   z-index: 5; }
 
 .welcome_area::before {
-  background-color: #252525; }
+  background-color: #262626; }
 
 .welcome_area::after {
   background-color: #262626; }
@@ -2739,6 +2739,17 @@ Main components
     height: 30px;
     margin-top: -2px;
     margin-left: -15px; }
+  @media (min-width: 1170px) {
+    .cd-timeline-img.extra-small {
+      margin-top: 16px; }
+    .cd-timeline-img.small {
+      margin-top: 12px; }
+    .cd-timeline-img.medium {
+      margin-top: 12px; }
+    .cd-timeline-img.large {
+      margin-top: 8px; }
+    .cd-timeline-img.u-large {
+      margin-top: 8px; } }
 
 .cd-timeline-img {
   background: #673AB7; }
@@ -2772,6 +2783,10 @@ Main components
     /* Force Hardware Acceleration in WebKit */
     -webkit-transform: translateZ(0);
     -webkit-backface-visibility: hidden; } }
+
+.cd-timeline-blocks-wrapper {
+  max-width: 2000px;
+  margin: 0 auto; }
 
 .cd-timeline-content {
   position: relative;

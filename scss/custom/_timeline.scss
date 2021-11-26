@@ -134,6 +134,28 @@ Main components
     margin-top: -2px;
     margin-left: -15px;
   }
+
+  @media (min-width: 1170px) {
+    &.extra-small {
+      margin-top: 16px;
+    }
+  
+    &.small {
+      margin-top: 12px;
+    }
+  
+    &.medium {
+      margin-top: 12px;
+    }
+  
+    &.large {
+      margin-top: 8px;
+    }
+  
+    &.u-large {
+      margin-top: 8px;
+    }
+  }
 }
 .cd-timeline-img {
   background: #673AB7;
@@ -188,6 +210,11 @@ Main components
   }
 }
 
+.cd-timeline-blocks-wrapper {
+  max-width: 2000px;
+  margin: 0 auto;
+}
+
 .cd-timeline-content {
   position: relative;
   margin-left: 60px;
@@ -195,6 +222,7 @@ Main components
   background: #333C42;
   border-radius: 2px;
   padding: 1em;
+  
   .timeline-content-info {
     background: #2B343A;
     padding: 5px 10px;
