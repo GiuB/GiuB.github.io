@@ -155,3 +155,27 @@ body {
         }
     }
 }
+
+@media only screen and (max-width: 991px) {
+    .navbar-toggler[aria-expanded="true"] > span {
+        background-color: transparent;
+    }
+
+    .navigation_area > .mainmenu_area .mainmenu {
+        padding: 20px 0 10px;
+        padding-bottom: 0;
+
+        .nav-item {
+            a {
+                text-align: center;
+                text-transform: uppercase;
+            }
+        }
+
+        li {
+            a::before {
+                display: none;
+            }
+        }
+    }
+}

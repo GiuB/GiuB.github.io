@@ -579,10 +579,12 @@
 
 @media only screen and (max-width: 767px) { 
     .welcome_area:before {
+        bottom: -70%;
         -webkit-transform: rotate(7deg) scaleY(1.25) scaleX(1.5);
                 transform: rotate(7deg) scaleY(1.25) scaleX(1.5);
     }
     .welcome_area:after {
+        bottom: -70%;
         -webkit-transform: rotate(-7deg) scaleY(1.25) scaleX(1.5);
                 transform: rotate(-7deg) scaleY(1.25) scaleX(1.5);
     }
@@ -637,7 +639,7 @@
     }
     .welcome_area:before, 
     .welcome_area:after {
-        bottom: -55px;
+        bottom: -80%;
     }
 }
 @media only screen and (max-width: 450px) { 
@@ -662,5 +664,9 @@
     }
     .home_text_block .cd-headline {
         margin-bottom: 10px;
-    }   
+    }  
+    .welcome_area:before, 
+    .welcome_area:after {
+        bottom: -90%;
+    } 
 }

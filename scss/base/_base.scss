@@ -68,6 +68,12 @@ h6 {
     font-size: 0.85em;
 }
 
+.clearfix {
+    display: table;
+    content: "";
+    clear: both;
+}
+
 /* [ 2.1 Elements ] */
 img {
     max-width: 100%;
