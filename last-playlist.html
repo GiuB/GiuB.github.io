@@ -41,6 +41,7 @@
     <style>
         body {
             background-color: #262626;
+            line-height: 1.4em;
         }
 
         .playlist-wrap {
@@ -66,24 +67,47 @@
             line-height: 1.4em;
         }
 
-        .spotify-btn {
-            background-image: url('/images/playlist/spotify-logo.png');
-            background-repeat: no-repeat;
-            background-size: 48px;
+        .play-btn {
             background-position: 16px center;
+            transition: all .3s ease-in-out;
+            background-repeat: no-repeat;
             padding: 20px 16px 20px 74px;
-            background-color: white;
+            background-color: #f8f8f8;
+            background-size: 48px;
             border-radius: 8px;
-            color: black;
-            font-size: 24px;
-            border: solid 3px #1cd760;
-            transition: all .2s ease-in-out;
-            display: inline-block;
+            line-height: 1.2em;
             margin: 16px auto;
+            max-width: 300px;
+            font-size: 22px;
+            display: block;
+            color: black;
         }
 
-        .spotify-btn:hover {
-            background-color: #aca68d;
+        .play-btn:active,
+        .play-btn:focus {
+            color: black;
+        }
+
+        .spotify-btn {
+            background-image: url('/images/playlist/spotify-logo.png');
+            border: solid 3px #1cd760;
+        }
+
+        .youtube-btn {
+            background-image: url('/images/playlist/youtube-logo.png');
+            border: solid 3px #ce2d2b;
+        }
+
+        .spotify-btn:hover,
+        .spotify-btn:focus {
+            box-shadow: 0 0 30px 5px #1cd760;
+            background-color: #459a63;
+        }
+
+        .youtube-btn:hover,
+        .youtube-btn:focus {
+            box-shadow: 0 0 30px 5px #ce2d2b;
+            background-color: #eab6b5;
         }
 
         .playlist-curator {
@@ -109,8 +133,12 @@
             👹 Lucifer Playlist 👹
         </div>
 
-        <a class="spotify-btn" href="https://bit.ly/the-awoken-1-spotify">
-            Listen on spotify
+        <a class="play-btn spotify-btn" target="_blank" href="https://bit.ly/the-awoken-1-spotify">
+            Listen on Spotify
+        </a>
+
+        <a class="play-btn youtube-btn" target="_blank" href="https://bit.ly/the-awoken-1-youtube">
+            Listen on YouTube
         </a>
 
         <div class="playlist-curator">
