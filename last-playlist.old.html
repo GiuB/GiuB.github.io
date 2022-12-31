@@ -46,66 +46,51 @@
 
     <style>
         body {
-            background-image: url('/images/playlist/awoken-1.jpg');
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            backdrop-filter: blur(10px);
-            background-color: white;
-            background-size: cover;
+            background-color: #262626;
             line-height: 1.4em;
         }
 
         h1, h2, h3, h4, h5, h6 {
-            color: #f8f8f8;
+            color: #aca68d;
         }
 
         .playlist-wrap {
             font-family: sans-serif;
             text-align: center;
-            min-height: 100vh;
-            max-width: 420px;
-            color: #f8f8f8;
-            margin: 0 auto;
-            padding: 24px 16px 16px 16px;
-            justify-content: center;
-            flex-direction: column;
-            align-items: center;
-            display: flex;
-        }
-
-        .playlist-boxed {
-            box-shadow: 0 0 150px black;
-            border-radius: 12px;
-            overflow: hidden;
+            padding: 16px;
+            color: #aca68d;
         }
 
         .img-preview {
             width: 640px;
             margin: 0 auto;
             max-width: 100%;
+            border-radius: 20px;
+            border: solid 10px #aca68d;
         }
 
         .playlist-title {
-            font-size: 20px;
-            margin-bottom: 0;
+            font-size: 24px;
+            font-weight: 500;
             line-height: 1.4em;
             padding: 28px 16px 24px;
-            background-color: rgba(94, 117, 107, .86);
         }
 
         .play-btn {
-            transition: all .2s ease-in-out;
+            background-position: 16px center;
+            transition: all .3s ease-in-out;
+            background-repeat: no-repeat;
+            padding: 20px 16px 20px 74px;
             background-color: #f8f8f8;
-            border: solid 1px #aaa;
-            border-radius: 4px;
+            background-size: 48px;
+            border-radius: 8px;
             line-height: 1.2em;
-            padding: 6px 16px;
+            margin: 16px auto;
+            max-width: 300px;
+            font-size: 22px;
             font-weight: 500;
-            align-self: center;
-            font-size: 16px;
             display: block;
-            color: #555;
-            width: 110px;
+            color: black;
         }
 
         .play-btn:active,
@@ -113,48 +98,26 @@
             color: black;
         }
 
-        .play-row {
-            justify-content: space-between;
-            align-items: center;
-            background: #f8f8f8;
-            padding: 12px 16px;
-            min-height: 64px;
-            font-size: 16px;
-            display: flex;
-            width: 100%;
-        }
-
-        .youtube-logo,
-        .spotify-logo {
-            width: 124px;
-            object-fit: contain;
-        }
-
-        .youtube-row {
-            background-color: #222;
-            color: #f8f8f8;
-        }
-
-        .play-row:hover .spotify-btn {
-            box-shadow: 0 0 30px 5px #1cd760;
-            border-color: #1cd760;
-            background-color: #222;
-            color: #1cd760;
-            font-weight: 500;
+        .spotify-btn {
+            background-image: url('/images/playlist/spotify-logo.png');
+            border: solid 3px #1cd760;
         }
 
         .youtube-btn {
-            background-color: #3c3c3c;
-            border: solid 1px #666;
-            color: #d0d0d0;
+            background-image: url('/images/playlist/youtube-logo.png');
+            border: solid 3px #ce2d2b;
         }
 
-        .play-row:hover .youtube-btn {
+        .spotify-btn:hover,
+        .spotify-btn:focus {
+            box-shadow: 0 0 30px 5px #1cd760;
+            background-color: #459a63;
+        }
+
+        .youtube-btn:hover,
+        .youtube-btn:focus {
             box-shadow: 0 0 30px 5px #ce2d2b;
-            background-color: #222;
-            border-color: #ce2d2b;
-            color: #ce2d2b;
-            font-weight: 500;
+            background-color: #eab6b5;
         }
 
         .donation-wrap {
@@ -197,25 +160,24 @@
 
 <body>
     <div class="playlist-wrap">
-        <div class="playlist-boxed">
-            <img class="img-preview" src="/images/playlist/awoken-1.jpg" />
-            
-            <h2 class="playlist-title">
-                🎵 Mix - Heavy Rock 🎸<br />
-                Lucifer Playlist<br />
-                👹 👼
-            </h2>
+        <a href="https://bit.ly/the-awoken-1-spotify">
+            <img class="img-preview" src="/images/playlist/the-awoken-1.jpeg" />
+        </a>
+        
+        <h2 class="playlist-title">
+            🎵 Mix - Heavy Rock 🎸<br />
+            Lucifer Playlist<br />
+            👹 👼
+        </h2>
 
-            <a class="play-row spotify-row" target="_blank" href="https://bit.ly/the-awoken-1-spotify">
-                <img class="spotify-logo" src="/images/playlist/spotify-logo-full.png" />
-                <div class="play-btn spotify-btn">Play</div>
-            </a>
+        <a class="play-btn spotify-btn" target="_blank" href="https://bit.ly/the-awoken-1-spotify">
+            Listen on Spotify
+        </a>
 
-            <a class="play-row youtube-row" target="_blank" href="https://bit.ly/the-awoken-1-youtube">
-                <img class="youtube-logo" src="/images/playlist/youtube-white-logo.png" />
-                <div class="play-btn youtube-btn">Play</div>
-            </a>
-        </div>
+        <a class="play-btn youtube-btn" target="_blank" href="https://bit.ly/the-awoken-1-youtube">
+            Listen on YouTube
+        </a>
+
 
         <div class="donation-wrap">
             <h3>Did you like it?</h3>
