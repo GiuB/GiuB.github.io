@@ -83,7 +83,7 @@
             font-family: sans-serif;
             text-align: center;
             min-height: 100vh;
-            max-width: 420px;
+            max-width: 532px;
             color: #f8f8f8;
             margin: 0 auto;
             padding: 24px 16px 16px 16px;
@@ -95,8 +95,9 @@
 
         .playlist-boxed {
             box-shadow: 0 0 150px black;
-            border-radius: 12px;
+            border-radius: 20px;
             overflow: hidden;
+            width: 100%;
         }
 
         .playlist-title strong {
@@ -198,7 +199,20 @@
             font-weight: 500;
         }
 
+        .play-row:hover .soundcloud-btn {
+            box-shadow: 0 0 30px 5px #f26e22;
+            border-color: #f26e22;
+            background-color: #222;
+            color: #f26e22;
+            font-weight: 500;
+        }
+
+        .soundcloud-logo {
+            max-width: 200px;
+        }
+
         .donation-wrap {
+            margin-top: 48px;
             padding: 48px 0 24px;
         }
 
@@ -233,13 +247,21 @@
         .playlist-curator a:hover {
             color: white;
         }
+
+        .soundcloud-preview {
+            margin-top: 120px;
+            width: 100%;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0px 0px 22px black;
+        }
     </style>
 </head>
 
 <body>
     <div class="playlist-wrap">
         <div class="playlist-boxed">
-            <img class="img-preview" src="/images/playlist/devils-theory-cover-1.jpg" />
+            <img class="img-preview" src="/images/playlist/devils-theory-cover-1.jpg" />            
             
             <div class="playlist-main-text">
                 <h2 class="playlist-title">
@@ -250,15 +272,24 @@
                 <h5 class="playlist-subtitle">Early access release just 4<br />premium spotify users</h5>
             </div>
 
+            <a class="play-row youtube-row" target="_blank" href="https://bit.ly/devils-theory-youtube">
+                <img class="youtube-logo" src="/images/playlist/youtube-white-logo.png" />
+                <div class="play-btn youtube-btn">Play</div>
+            </a>
+
             <a class="play-row spotify-row" target="_blank" href="https://bit.ly/devils-theory">
                 <img class="spotify-logo" src="/images/playlist/spotify-logo-full.png" />
                 <div class="play-btn spotify-btn">Play</div>
             </a>
 
-            <!-- <a class="play-row youtube-row" target="_blank" href="https://bit.ly/luc1fer-r3turn-youtube">
-                <img class="youtube-logo" src="/images/playlist/youtube-white-logo.png" />
-                <div class="play-btn youtube-btn">Play</div>
-            </a> -->
+            <a class="play-row soundcloud-row" target="_blank" href="https://bit.ly/devils-theory-soundcloud">
+                <img class="soundcloud-logo" src="/images/playlist/soundcloud-logo.png" />
+                <div class="play-btn soundcloud-btn">Play</div>
+            </a>
+        </div>
+
+        <div class="soundcloud-preview">
+            <iframe width="100%" height="600" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1748290212&color=%23311a13&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/daniele-covallero" title="Daniele Covallero" target="_blank" style="color: #cccccc; text-decoration: none;">Daniele Covallero</a> · <a href="https://soundcloud.com/daniele-covallero/sets/the-devils-theory-vol-1-by" title="The Devil’s Theory [vol. 1] [by GiuBBass] 😈" target="_blank" style="color: #cccccc; text-decoration: none;">The Devil’s Theory [vol. 1] [by GiuBBass] 😈</a></div>
         </div>
 
         <div class="donation-wrap">
