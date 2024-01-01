@@ -195,7 +195,7 @@
             color: #d0d0d0;
         }
 
-        .play-row:hover .youtube-btn, .play-row:hover .apple-btn {
+        .play-row:hover .youtube-btn, .play-row:hover .apple-btn, .play-row:hover .tidal-btn {
             box-shadow: 0 0 30px 5px #ce2d2b;
             background-color: #222;
             border-color: #ce2d2b;
@@ -217,6 +217,10 @@
 
         .apple-logo {
             max-width: 100px;
+        }
+
+        .tidal-logo {
+            max-width: 140px;
         }
 
         .donation-wrap {
@@ -258,11 +262,13 @@
         }
 
         .soundcloud-preview {
-            margin-top: 120px;
             width: 100%;
-            border-radius: 20px;
             overflow: hidden;
+            margin-top: 120px;
+            border-radius: 20px;
+            padding-bottom: 6px;
             box-shadow: 0px 0px 22px black;
+            background: rgba(0, 0, 0, .85);
         }
     </style>
 </head>
@@ -292,14 +298,19 @@
                 <div class="play-btn youtube-btn">Play</div>
             </a>
 
+            <a class="play-row apple-row" target="_blank" href="https://bit.ly/devils-theory-apple">
+                <img class="apple-logo" src="/images/playlist/apple-logo.png" />
+                <div class="play-btn apple-btn">Play</div>
+            </a>
+
             <a class="play-row spotify-row" target="_blank" href="https://bit.ly/devils-theory">
                 <img class="spotify-logo" src="/images/playlist/spotify-logo-full.png" />
                 <div class="play-btn spotify-btn">Play</div>
             </a>
 
-            <a class="play-row apple-row" target="_blank" href="https://bit.ly/devils-theory-apple">
-                <img class="apple-logo" src="/images/playlist/apple-logo.png" />
-                <div class="play-btn apple-btn">Play</div>
+            <a class="play-row tidal-row" target="_blank" href="https://bit.ly/devils-theory-tidal">
+                <img class="tidal-logo" src="/images/playlist/tidal-logo.png" />
+                <div class="play-btn tidal-btn">Play</div>
             </a>
 
             <a class="play-row soundcloud-row" target="_blank" href="https://bit.ly/devils-theory-soundcloud">
