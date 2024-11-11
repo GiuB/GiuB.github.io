@@ -1,0 +1,380 @@
+
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Page Title -->
+    <title>The Devil's Theory - by GiuBBass</title>
+
+    <!-- 
+        Sample utm link: 
+        https://giub.github.io/last-playlist.html?utm_source=coaster&utm_medium=local&utm_campaign=playlist&utm_content=awoken1
+        Available utm_sources: "coaster" | "sticker"
+    -->
+
+    <!-- Metas -->
+    <meta name="description" content="The Devil's Theory - Album/Playlist 🎸"/>
+    <meta property="og:url" content="https://giub.github.io/last-playlist.html" />
+    <meta property="og:type" content="music.playlist" />
+    <meta property="og:music:creator" content="Daniele Covallero [aka GiuBBass]" />
+    <meta property="og:title" content="The Devil's Theory - Album/Playlist by GiuBBass 🎧" />
+    <meta property="og:description" content="The Devil's Theory - Album/Playlist 🎸" />
+    <meta property="og:image" content="https://giub.github.io/images/playlist/devils-theory-cover-1.jpg" />
+    
+    <!---Font Icon-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="shortcut icon" href="images/giub-ico.png">
+
+    <!-- Plugins css -->
+    <link rel="stylesheet" href="css/plugins.css">
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Modernizr js-->
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YNL476J115"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-YNL476J115');
+    </script>
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '932474393488636');
+        fbq('track', 'PageView');
+    </script>
+
+    <style>
+        body {
+            background-image: url('/images/playlist/devils-theory-bg-1.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: auto 100%;
+            background-size: cover;
+            line-height: 1.4em;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            color: #f8f8f8;
+        }
+
+        .playlist-wrap {
+            font-family: sans-serif;
+            text-align: center;
+            min-height: 100vh;
+            max-width: 532px;
+            color: #f8f8f8;
+            margin: 0 auto;
+            padding: 24px 16px 16px 16px;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            display: flex;
+        }
+
+        .playlist-boxed {
+            box-shadow: 0px 0px 22px black;
+            border-radius: 20px;
+            overflow: hidden;
+            width: 100%;
+        }
+
+        .playlist-title strong {
+            font-size: 24px;
+        }
+
+        .playlist-title a,
+        .playlist-subtitle a  {
+            text-decoration: underline;
+        }
+
+        .playlist-title a:hover,
+        .playlist-subtitle a:hover {
+            color: #d73737;
+            text-decoration: none;
+        }
+
+        .img-preview {
+            width: 640px;
+            margin: 0 auto;
+            max-width: 100%;
+        }
+
+        .playlist-title {
+            font-size: 20px;
+            margin-bottom: 0;
+        }
+
+        .playlist-main-text {
+            line-height: 1.4em;
+            padding: 28px 16px 24px;
+            background-color: rgba(49, 37, 37, .86);
+        }
+
+        .playlist-subtitle {
+            margin: 36px 0;
+            padding: 0 24px;
+            font-style: italic;
+            font-size: 16px;
+        }
+
+        .play-btn {
+            transition: all .2s ease-in-out;
+            background-color: #f8f8f8;
+            border: solid 1px #aaa;
+            border-radius: 4px;
+            line-height: 1.2em;
+            padding: 6px 16px;
+            font-weight: 500;
+            align-self: center;
+            font-size: 16px;
+            display: block;
+            color: #555;
+            width: 110px;
+        }
+
+        .play-btn:active,
+        .play-btn:focus {
+            color: black;
+        }
+
+        .play-row {
+            justify-content: space-between;
+            align-items: center;
+            background: #f8f8f8;
+            padding: 12px 16px;
+            min-height: 64px;
+            font-size: 16px;
+            display: flex;
+            width: 100%;
+        }
+
+        .youtube-logo,
+        .spotify-logo {
+            width: 124px;
+            object-fit: contain;
+        }
+
+        .youtube-row {
+            background-color: #222;
+            color: #f8f8f8;
+        }
+
+        .play-row:hover .spotify-btn {
+            box-shadow: 0 0 30px 5px #1cd760;
+            border-color: #1cd760;
+            background-color: #222;
+            color: #1cd760;
+            font-weight: 500;
+        }
+
+        .youtube-btn {
+            background-color: #3c3c3c;
+            border: solid 1px #666;
+            color: #d0d0d0;
+        }
+
+        .play-row:hover .youtube-btn, .play-row:hover .apple-btn, .play-row:hover .tidal-btn {
+            box-shadow: 0 0 30px 5px #ce2d2b;
+            background-color: #222;
+            border-color: #ce2d2b;
+            color: #ce2d2b;
+            font-weight: 500;
+        }
+
+        .play-row:hover .soundcloud-btn {
+            box-shadow: 0 0 30px 5px #f26e22;
+            border-color: #f26e22;
+            background-color: #222;
+            color: #f26e22;
+            font-weight: 500;
+        }
+
+        .play-row:hover .amazon-music-btn {
+            box-shadow: 0 0 30px 5px #0082c8;
+            background-color: #222;
+            border-color: #0082c8;
+            color: #0082c8;
+            font-weight: 500;
+        }
+
+        .soundcloud-logo {
+            max-width: 200px;
+        }
+
+        .apple-logo {
+            max-width: 100px;
+        }
+
+        .tidal-logo {
+            max-width: 140px;
+        }
+
+        .amazon-music-logo {
+            max-width: 170px;
+        }
+
+        .youtube-music-logo {
+            max-width: 190px;
+        }
+
+        .donation-wrap {
+            margin-top: 48px;
+            padding: 48px 0 24px;
+        }
+
+        .donation-wrap h3 {
+            margin-bottom: 12px;
+        }
+
+        .donation-wrap p {
+            margin-top: 12px;
+            font-size: 16px;
+        }
+
+        .bmc-btn {
+            transition: all .3s ease-in-out;
+        }
+
+        .bmc-btn img {
+            max-width: 300px;
+            border-radius: 14px;
+        }
+
+        .bmc-btn:hover img {
+            box-shadow: 0 0 30px 5px #ffde00;
+        }
+
+        .playlist-curator {
+            color: #aca68d;
+            margin-top: 32px;
+            font-size: 16px;
+            padding-bottom: 32px;
+        }
+
+        .playlist-curator a:hover {
+            color: white;
+        }
+
+        .soundcloud-preview {
+            width: 100%;
+            min-height: 626px;
+            overflow: hidden;
+            margin-top: 120px;
+            border-radius: 20px;
+            padding-bottom: 6px;
+            box-shadow: 0px 0px 22px black;
+            background: rgba(0, 0, 0, .85);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="playlist-wrap">
+        <div class="playlist-boxed">
+            <img class="img-preview" src="/images/playlist/devils-theory-cover-1.jpg" />            
+            
+            <div class="playlist-main-text">
+                <h2 class="playlist-title">
+                    <strong>👹 The Devil's Theory 😇</strong><br />
+                    Heavy Rock Playlist
+                </h2>
+    
+                <p class="playlist-subtitle">
+                    A musical opera by <a href="https://www.instagram.com/giubbass/" target="_blank" title="Who is the Devil?">@GiuBBass</a><br />(should be listened following the current track order) 🎧
+                    <br /><br />
+                    It's a mix of rock / metal / tecno ecc.. focused on the Antichrist spiritual theory (about the dead souls awakening) 👻
+                    <br /><br />
+                    <a href="https://www.instagram.com/giubbass/" target="_blank" title="Who is the Devil?">Follow me on instagram</a> for more ...
+                </p>
+            </div>
+
+            <a class="play-row youtube-row" target="_blank" href="https://bit.ly/devils-theory-youtube">
+                <img class="youtube-logo" src="/images/playlist/youtube-white-logo.png" />
+                <div class="play-btn youtube-btn">Play</div>
+            </a>
+
+            <a class="play-row youtube-row" target="_blank" href="https://bit.ly/devils-theory-youtube-music">
+                <img class="youtube-music-logo" src="/images/playlist/youtube-music-logo.png" />
+                <div class="play-btn youtube-btn">Play</div>
+            </a>
+
+            <a class="play-row apple-row" target="_blank" href="https://bit.ly/devils-theory-apple">
+                <img class="apple-logo" src="/images/playlist/apple-logo.png" />
+                <div class="play-btn apple-btn">Play</div>
+            </a>
+
+            <a class="play-row spotify-row" target="_blank" href="https://bit.ly/devils-theory">
+                <img class="spotify-logo" src="/images/playlist/spotify-logo-full.png" />
+                <div class="play-btn spotify-btn">Play</div>
+            </a>
+
+            <a class="play-row tidal-row" target="_blank" href="https://bit.ly/devils-theory-tidal">
+                <img class="tidal-logo" src="/images/playlist/tidal-logo.png" />
+                <div class="play-btn tidal-btn">Play</div>
+            </a>
+
+            <a class="play-row amazon-music-row" target="_blank" href="https://bit.ly/devils-theory-amazon">
+                <img class="amazon-music-logo" src="/images/playlist/amazon-music-logo.png" />
+                <div class="play-btn amazon-music-btn">Play</div>
+            </a>
+
+            <a class="play-row soundcloud-row" target="_blank" href="https://bit.ly/devils-theory-soundcloud">
+                <img class="soundcloud-logo" src="/images/playlist/soundcloud-logo.png" />
+                <div class="play-btn soundcloud-btn">Play</div>
+            </a>
+        </div>
+
+        <div class="soundcloud-preview">
+            <iframe width="100%" height="600" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1748290212&color=%23311a13&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/daniele-covallero" title="Daniele Covallero" target="_blank" style="color: #cccccc; text-decoration: none;">Daniele Covallero</a> · <a href="https://soundcloud.com/daniele-covallero/sets/the-devils-theory-vol-1-by" title="The Devil’s Theory [vol. 1] [by GiuBBass] 😈" target="_blank" style="color: #cccccc; text-decoration: none;">The Devil’s Theory [vol. 1] [by GiuBBass] 😈</a></div>
+        </div>
+
+        <div class="donation-wrap">
+            <h3>Did you like it?</h3>
+            <a class="bmc-btn" target="_blank" href="https://bit.ly/buy-giub-coffee">
+                <img src="images/playlist/bmc-button.png" />
+            </a>
+            <p>
+                Make a donation to help me<br />organize my first Hell Fest 😈<br />(buy me a 🖕ing coffee ☕ ⬆️)!
+            </p>
+        </div>
+
+        <div class="playlist-curator">
+            curated by:
+            <br /><br />
+            <a href="https://www.instagram.com/giubbass/">
+                <i class="fa fa-instagram"></i><br />
+                Daniele Covallero<br />
+                <em>aka <strong>"GiuB Bass"</strong></em></a>
+        </div>
+    </div>
+
+    <!-- Facebook Pixel Code -->
+    <noscript>
+        <img height="1" width="1" style="display:none" 
+            src="https://www.facebook.com/tr?id=932474393488636&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+</body>
+</html>
